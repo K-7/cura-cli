@@ -1,0 +1,6 @@
+.idea/
+cura/__pycache__/
+env/
+cura.egg-info/
+.coverage
+*.pyc
