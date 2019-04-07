@@ -1,2 +1,2 @@
-# react-cli
-Custom React CLI
+# cura-cli
+Custom Cura CLI
