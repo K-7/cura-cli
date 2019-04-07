@@ -2,22 +2,16 @@
 cura
 
 Usage:
-  cura hello
+  cura git_pull --name=<name> [--url=<url>]
+  cura react_component --name=<name> [--path=<path> --sf]
   cura -h | --help
   cura --version
 
 Options:
-  -h --help                         Show this screen.
-  --version                         Show version.
+  -sf| --singlefile  If only a single file component required then pass this parameter
 
-Examples:
-  cura hello
 
-Help:
-  For help using this tool, please open an issue on the Github repository:
-  https://github.com/rdegges/cura-cli
 """
-
 
 from inspect import getmembers, isclass
 
@@ -30,10 +24,9 @@ def main():
     """Main CLI entrypoint."""
     import cura.commands
     options = docopt(__doc__, version=VERSION)
-
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
-    for (k, v) in options.items(): 
+    for (k, v) in options.items():
         if hasattr(cura.commands, k) and v:
             module = getattr(cura.commands, k)
             cura.commands = getmembers(module, isclass)
