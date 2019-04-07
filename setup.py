@@ -33,7 +33,7 @@ class RunTests(Command):
 setup(
     name='cura',
     version=__version__,
-    description='A skeleton command line program in Python.',
+    description='Program in Python for Cura CLI',
     long_description=long_description,
     url='https://github.com/K-7/cura-cli',
     author='K2A',

@@ -17,7 +17,7 @@ class ReactComponent(Base):
     def run(self):
         name = self.options['--name']
         single_file = self.options['--sf']
-        path = self.options.get('--path', './')
+        path = self.options.get('--path') or './'
         absolute_path = os.path.join(os.getcwd(), path)
         directory_path = os.path.join(path, name)
 
