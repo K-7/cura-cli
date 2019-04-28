@@ -4,6 +4,7 @@ k2a
 Usage:
   k2a git_pull --name=<name> [--url=<url>]
   k2a react_component --name=<name> [--path=<path> --sf]
+  k2a activate
   k2a -h | --help
   k2a --version
 
