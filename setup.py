@@ -6,7 +6,7 @@ from subprocess import call
 
 from setuptools import Command, find_packages, setup
 
-from cura import __version__
+from k2a import __version__
 
 this_dir = abspath(dirname(__file__))
 with open(join(this_dir, 'README.rst'), encoding='utf-8') as file:
@@ -26,16 +26,16 @@ class RunTests(Command):
 
     def run(self):
         """Run all tests!"""
-        errno = call(['py.test', '--cov=cura', '--cov-report=term-missing'])
+        errno = call(['py.test', '--cov=k2a', '--cov-report=term-missing'])
         raise SystemExit(errno)
 
 
 setup(
-    name='cura',
+    name='k2a',
     version=__version__,
-    description='Program in Python for Cura CLI',
+    description='Program in Python for k2a CLI',
     long_description=long_description,
-    url='https://github.com/K-7/cura-cli',
+    url='https://github.com/K-7/k2a-cli',
     author='K2A',
     author_email='me@k2a.in',
     license='UNLICENSE',
@@ -63,7 +63,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'cura=cura.cli:main',
+            'k2a=k2a.cli:main',
         ],
     },
     cmdclass={'test': RunTests},

@@ -16,7 +16,6 @@ class GitPull(Base):
             self.__pull_repo(url or 'git@github.com/K-7/socket_redis_implementation')
         elif name == 'dicom-ios':
             self.__pull_repo(url or 'git@github.com/K-7/dicom-ios')
-       
 
     def __pull_repo(self, url):
         popen(['git', 'clone', url], stdout=PIPE).communicate()

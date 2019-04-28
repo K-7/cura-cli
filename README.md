@@ -1,11 +1,11 @@
 # cura-cli
-Custom Cura CLI
+Custom k2a CLI
 
 ### Usage 
 - Install cli in any machine using root permission \
-`$ sudo pip install git+https://github.com/K-7/cura-cli`\
+`$ sudo pip install git+https://github.com/K-7/k2a-cli`\
 OR\
-`sudo pip install --upgrade git+https://github.com/K-7/cura-cli`
+`sudo pip install --upgrade git+https://github.com/K-7/k2a-cli`
 
 - If you've cloned this project, and Want to install the library (and all development dependencies) \
  `$ pip install -e .[test]`
