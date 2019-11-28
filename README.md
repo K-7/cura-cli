@@ -1,4 +1,4 @@
-# cura-cli
+# cli tool written in Python
 Custom k2a CLI
 
 ### Usage 
